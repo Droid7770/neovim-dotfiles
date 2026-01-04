@@ -16,8 +16,10 @@ require('lazy').setup({
   require 'custom.plugins.conform',
   require 'custom.plugins.mini',
   require 'custom.plugins.todo-comments',
+  require 'custom.plugins.transparent',
   require 'custom.themes.base16',
   require 'custom.themes.tokyonight',
+  require 'custom.themes.oh-lucy',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
