@@ -2,4 +2,9 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return { 'NMAC427/guess-indent.nvim' }
+return {
+  'NMAC427/guess-indent.nvim',
+  opts = {
+    auto_cmd = true,
+  },
+}
