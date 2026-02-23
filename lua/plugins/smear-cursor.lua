@@ -1,5 +1,6 @@
 return {
   'sphamba/smear-cursor.nvim',
+  event = 'VeryLazy',
   opts = {
     cursor_color = '#FF7DA3',
     particles_enabled = false,

@@ -1,4 +1,19 @@
 return {
+  {
+    "stevearc/conform.nvim",
+    event = 'BufWritePre', -- uncomment for format on save
+    opts = require "configs.conform",
+  },
+
+  -- These are some examples, uncomment them if you want to see them work!
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require "configs.lspconfig"
+    end,
+  }, 
+
+ {
   'folke/which-key.nvim',
   event = 'VimEnter', -- Sets the loading event to 'VimEnter'
   opts = {
@@ -45,13 +60,27 @@ return {
 
     -- Document existing key chains
     spec = {
-      { '<leader>s', group = '[S]earch' },
+      { '<leader>s', group = 'Search' },
       { '<leader>g', group = 'Git' },
       { '<leader>u', group = 'Options' },
       { '<leader>b', group = 'Buffer' },
       { '<leader>c', group = 'File' },
-      { '<leader>t', group = '[T]oggle' },
-      { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+      { '<leader>t', group = 'Customization' },
+      { '<leader>f', group = 'Find' },
+      { '<leader>w', group = 'Which-key' },
     },
   },
+  },
+  -- test new blink
+  -- { import = "nvchad.blink.lazyspec" },
+
+  -- {
+  -- 	"nvim-treesitter/nvim-treesitter",
+  -- 	opts = {
+  -- 		ensure_installed = {
+  -- 			"vim", "lua", "vimdoc",
+  --      "html", "css"
+  -- 		},
+  -- 	},
+  -- },
 }
