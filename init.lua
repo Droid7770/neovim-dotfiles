@@ -22,6 +22,7 @@ require("lazy").setup({
     import = "nvchad.plugins",
   },
 
+
   { import = "plugins" },
 }, lazy_config)
 
@@ -35,6 +36,4 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
-
--- matugen & pywal integration
 
